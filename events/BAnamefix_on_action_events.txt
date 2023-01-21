@@ -1,0 +1,727 @@
+namespace = BA_namefix
+
+# New Leaders Get Erudite Trait
+country_event = {
+	id = BA_namefix.01
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		from = {
+			species = {
+				# filter by race
+				is_archetype = Schale
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			if = {
+				# omfg 194 entry
+				limit = { species_portrait = BA_01 } #琳
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_02 } #明太子
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_03 } #黑山羊
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_04 } #印度人
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						species_portrait = BA_05
+						species_portrait = BA_06
+					}
+				} #草莓牛奶
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_07 } #初音
+				leader_name = "BA_01"
+				break = yes
+			}
+
+			# Rabbit
+			if = {
+				limit = { species_portrait = BA_08 } #rabbit leader
+				# also 171
+				leader_name = "月雪宫子"
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						species_portrait = BA_09
+						species_portrait = BA_10
+						# 172
+					}
+				 } #rabbit helicopter
+				leader_name = "空井咲"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_11 } #rabbit trashbin
+				#173
+				leader_name = "霞沢美游"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_12 } #rabbit hacker
+				#174
+				leader_name = "BA_01"
+				break = yes
+			}
+			
+			# Foxhound
+			if = {
+				limit = { species_portrait = BA_13 } #fox black?
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_14 } #fox tofu?
+				leader_name = "BA_01"
+				break = yes
+			}
+
+			#Valkyrie
+			if = {
+				limit = { species_portrait = BA_15 } #police chief
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_16 } #smoke
+				leader_name = "中务桐乃"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_17 } #donut
+				leader_name = "合欢垣吹雪"
+				break = yes
+			}
+
+			# Trinity
+			if = {
+				limit = { species_portrait = BA_18 } #dreaming
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = limit = { 
+					OR = {
+						species_portrait = BA_19
+						species_portrait = BA_20
+						# also 151
+					}
+				 } #witch mika
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_21 } #tea
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						species_portrait = BA_22 
+						species_portrait = BA_23
+					}
+				} #peroro
+				leader_name = "阿慈谷日富美"
+				break = yes
+			}
+			if = {
+				limit = { 
+					OR = {
+						species_portrait = BA_24
+						species_portrait = BA_25
+					}
+				 } #VANITAS
+				leader_name = "白洲梓"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_26 } #koharu
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_27 } #hanako
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_28 } #hasumi
+				#169
+				leader_name = "羽川莲见"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_29 } #tsurugi
+				# 170
+				#also 30
+				leader_name = "剑先鹤城"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_31 } #mashiro
+				# also 163
+				#also 32
+				leader_name = "静山真白"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_33 } #airi
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_34 } #natsu
+				# also 162
+				leader_name = "柚鸟夏"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_35 } #yoshimi
+				leader_name = "伊原木好美"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_36 } #mari
+				# also 161
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_37 } #hinata
+				leader_name = "若叶日向"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_38 } #2metertall
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_39 } #ghost
+				#168
+				#193
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_40 } #chainsaw med
+				#166
+				#194
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_41 } #sakurako?
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_42 } #librarian
+				leader_name = "古关忧"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_43 } #book cover
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_44 } #flashbang
+				leader_name = "守月铃美"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_45 } #kazusa
+				# also 153
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_152 } #satellite patrol star
+				leader_name = "BA_01"
+				break = yes
+			}
+
+			# gehenna
+			if = {
+				limit = { species_portrait = BA_46 } #hina
+				# also 47
+				# also 48
+				leader_name = "空崎日奈"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_49 } #iori
+				# also 50
+				leader_name = "银镜伊织"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_51 } #ako
+				#179
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_52 } #chinatsu
+				# also 53
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_54 } #sena
+				leader_name = "氷室濑名"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_55 } #food
+				leader_name = "爱清风香"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_56 } #aru
+				# also 57
+				leader_name = "陆八魔阿露"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_58 } #haruka
+				# also 59
+				leader_name = "伊草春香"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_60 } #mutsuki
+				# also 61
+				leader_name = "浅黄睦月"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_62 } #kayoko
+				# also 63
+				leader_name = "鬼方佳代子"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_64 } #ibuki
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_65 } #iroha
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_66 } #makoto
+				# also 67
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_68 } #beelzebub
+				#180
+				leader_name = "黑馆晴奈"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_69 } #crocodile
+				#182
+				leader_name = "鳄渊茜里"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_70 } #lion
+				# also 71
+				#181
+				leader_name = "狮子堂泉"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_72 } #squirrel
+				#183
+				leader_name = "赤司纯子"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_73 } #hot spring dev club member
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_74 } #gehenna teaser gohome club white hair
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_192 } #gehenna teaser gohome club pink hair
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_75 } #food disaster
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_149 } #satellite justice member eyes open
+				leader_name = "BA_01"
+				break = yes
+			}
+
+			# millenia
+			if = {
+				limit = { species_portrait = BA_76 } #yuuka
+				# also 159
+				leader_name = "早濑优香"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_154 } #noa
+				# also 160
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_77 } #yuzu
+				leader_name = "花冈柚子"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_78 } #midori
+				leader_name = "才羽绿"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_79 } #momoi
+				leader_name = "才羽桃衣"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_80 } #alis
+				leader_name = "天童爱丽丝"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_81 } #asuna
+				# also 82
+				#189
+				leader_name = "一之濑明日奈"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_83 } #akane
+				# also 84
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_85 } #karin
+				# also 86
+				#190
+				leader_name = "角楯花凛"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_87 } #neru
+				# also 88
+				leader_name = "美甘尼禄"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_89 } #seminar gacha loser
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_90 } #hare
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_91 } #meister
+				# also 155
+				leader_name = "白石歌原"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_92 } #hibiki
+				# also 156
+				leader_name = "猫冢响"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_93 } #kotama
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_94 } #explanation
+				# also 157
+				# 167
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_95 } #hot
+				leader_name = "和泉元艾米"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_143 } #cold, himari
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_96 } #maki
+				# also 165
+				leader_name = "小涂真纪"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_97 } #trainer
+				# also 164
+				leader_name = "乙花菫"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_98 } #9s stun
+				leader_name = "各务千寻"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_191 } #toki
+				leader_name = "BA_01"
+				break = yes
+			}
+
+			# abydos
+			if = {
+				limit = { species_portrait = BA_99 } #ojisan
+				# also 139
+				#176
+				leader_name = "小鸟游星野"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_100 } #shiroko
+				# also 101
+				#175
+				leader_name = "砂狼白子"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_102 } #nonomi
+				# also 140
+				#177
+				leader_name = "十六夜野宫"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_103 } #serika
+				# also 104
+				#178
+				leader_name = "黑见芹香"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_105 } #ayane
+				# also 141
+				# also 158
+				leader_name = "BA_01"
+				break = yes
+			}
+
+			#hakkiyako
+			if = {
+				limit = { species_portrait = BA_106 } #picnic
+				# also 146
+				leader_name = "水羽三森"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_107 } #wakamo
+				# also 108
+				# also 142
+				leader_name = "狐坂若藻"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_109 } #ninnin
+				# also 145
+				#185
+				leader_name = "久田泉奈"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_110 } #poem
+				# also 144
+				#184
+				leader_name = "和乐千世"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_111 } #satellite white hair poem simp
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_112 } #duelist
+				#186
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_113 } #michiru
+				leader_name = "千鸟满"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_114 } #tsukuyo
+				#187
+				leader_name = "大野月咏"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_115 } #tanuki
+				# also 147
+				#188
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_116 } #tsubaki
+				leader_name = "春日椿"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_117 } #pina
+				leader_name = "朝比奈菲娜"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_150 } #satellite white fox smoking pipe
+				leader_name = "BA_01"
+				break = yes
+			}
+
+			#red winter
+			if = {
+				limit = { species_portrait = BA_118 } #stalin
+				# also 119
+				leader_name = "连河切里诺"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_120 } #cleaning
+				leader_name = "池仓玛丽娜"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_121 } #stalin simp
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_122 } #ojisan proxy
+				# also 123
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_124 } #satellite librarian
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_125 } #ojisan proxy simp
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_126 } #satellite doujin artist
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_127 } #worker union
+				leader_name = "BA_01"
+				break = yes
+			}
+
+			#shanhaijing
+			if = {
+				limit = { species_portrait = BA_128 } #shun
+				#129
+				leader_name = "春原瞬"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_130 } #kokona
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_131 } #medicine saya
+				# 132
+				leader_name = "药子沙绫"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_133 } #cook
+				leader_name = "BA_01"
+				break = yes
+			}
+
+			#arius
+			if = {
+				limit = { species_portrait = BA_134 } #omnia vanitas
+				# also 135
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_136 } #hime
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_137 } #def down
+				leader_name = "BA_01"
+				break = yes
+			}
+			if = {
+				limit = { species_portrait = BA_138 } #hiero only
+				leader_name = "BA_01"
+				break = yes
+			}
+
+
+			# unknown character
+			# 148
+
+		}
+	}
+}
